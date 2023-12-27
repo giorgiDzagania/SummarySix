@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".ui.SecurityScreenFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_security_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Security Screen"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/poppins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_enter_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="-4sp"
+        android:text="Enter your passcode"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_security_screen"
+        app:layout_constraintStart_toStartOf="@id/tv_security_screen"
+        app:layout_constraintTop_toBottomOf="@id/tv_security_screen" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/tv_enter_passcode"
+        app:layout_constraintStart_toStartOf="@id/tv_enter_passcode"
+        app:layout_constraintTop_toBottomOf="@id/tv_enter_passcode">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <View
+                android:id="@+id/view_01"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/view_gray_oval" />
+
+            <View
+                android:id="@+id/view_02"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/view_gray_oval" />
+
+            <View
+                android:id="@+id/view_03"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/view_gray_oval" />
+
+            <View
+                android:id="@+id/view_04"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/view_gray_oval" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_01"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_02"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_03"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_04"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_05"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_06"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_three"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_07"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_08"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_09"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_four"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_fingerprint"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:src="@drawable/ic_touch__id"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_00"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/background_white_oval"
+                android:src="@drawable/ic_back_btn"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_fotgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poppins"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="-4sp"
+        android:text="Forgot password?"
+        android:textColor="@color/forgot_password_tv_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
